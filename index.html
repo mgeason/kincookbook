@@ -571,11 +571,11 @@ Error message and password prompt
 
 <li>Digestive Biscuits</li>
 
-<li>Draft of '$:/core/Filters/AllTags'</li>
-
 <li>Draft of '$:/core/Filters/Drafts'</li>
 
 <li>Draft of '$:/core/ui/MoreSideBar/Drafts'</li>
+
+<li>Draft of '$:/core/ui/MoreSideBar/Revision Needed'</li>
 
 <li>Eggplant Fessenjoon</li>
 
@@ -10137,7 +10137,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20201023230400675" filter="[tags[Revision Needed]!is[system]sort[title]]" modified="20201023230657302" tags="$:/tags/Filter" title="$:/core/Filters/Revision">
+<div created="20201023230400675" filter="[tags[]!is[Revision Needed]sort[title]]" modified="20201023231004840" tags="$:/tags/Filter" title="$:/core/Filters/Revision">
 <pre></pre>
 </div>
 <div caption="{{$:/language/SideBar/All/Caption}}" created="20201021100750832" modified="20201021100750832" title="$:/core/ui/MoreSideBar/All">
@@ -10439,7 +10439,7 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201023210215447" list="$:/core/Filters/Revision [[$:/core/ui/MoreSideBar/Revision Needed]] $:/AdvancedSearch $:/language/Filters/AllTags [[Draft of '$:/core/Filters/AllTags']] [[Draft of '$:/core/ui/MoreSideBar/Drafts']] [[Draft of '$:/core/Filters/Drafts']] $:/config/DefaultMoreSidebarTab [[Dietary Adaptation]]" modified="20201023230637047" title="$:/StoryList">
+<div created="20201023210215447" list="$:/core/Filters/Revision [[Draft of '$:/core/ui/MoreSideBar/Revision Needed']] $:/AdvancedSearch [[Draft of '$:/core/ui/MoreSideBar/Drafts']] [[Draft of '$:/core/Filters/Drafts']] $:/config/DefaultMoreSidebarTab [[Dietary Adaptation]]" modified="20201023230934957" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20201021070935216" list="$:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/Tools" modified="20201021094917633" title="$:/tags/MoreSideBar">
@@ -10448,8 +10448,8 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div created="20201021093732660" list="$:/core/ui/SideBar/Contents $:/core/ui/SideBar/All $:/core/ui/SideBar/Open $:/core/ui/SideBar/Recent $:/core/ui/SideBar/More" modified="20201021095554062" title="$:/tags/SideBar">
 <pre></pre>
 </div>
-<div created="20201021035640492" modified="20201023230750129" title="$:/temp/advancedsearch">
-<pre>drafts</pre>
+<div created="20201021035640492" modified="20201023230932058" title="$:/temp/advancedsearch">
+<pre>tags</pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
 <pre>{
@@ -12277,14 +12277,15 @@ Our bodies don't require as many dietary proteins as commonly thought. Eating a 
 # Remove your dough from the fridge and roll out to around 3mm thickness. It will be very crumbly so you’ll need to be very careful when rolling. Cut out circles of about 6cm diameter – I used a water glass to stamp out the shapes. Decorate with a pattern of your choice then bake in the middle of your oven for about 15 minutes.
 # When lightly golden but not too brown, remove from the oven and leave to cool on a wire rack. Store in an airtight container.</pre>
 </div>
-<div description="{{$:/language/Filters/AllTags}}" draft.of="$:/core/Filters/AllTags" draft.title="$:/core/Filters/AllTags" filter="[tags[]!is[system]sort[title]]" modified="20201023230528918" tags="$:/tags/Filter" title="Draft of '$:/core/Filters/AllTags'">
-<pre></pre>
-</div>
 <div description="{{$:/language/Filters/Drafts}}" draft.of="$:/core/Filters/Drafts" draft.title="$:/core/Filters/Drafts" filter="[has[draft.of]sort[title]]" modified="20201023230410831" tags="$:/tags/Filter" title="Draft of '$:/core/Filters/Drafts'">
 <pre></pre>
 </div>
 <div caption="{{$:/language/SideBar/Drafts/Caption}}" draft.of="$:/core/ui/MoreSideBar/Drafts" draft.title="$:/core/ui/MoreSideBar/Drafts" modified="20201023230759921" tags="$:/tags/MoreSideBar" title="Draft of '$:/core/ui/MoreSideBar/Drafts'">
 <pre>&lt;$list filter={{$:/core/Filters/Drafts!!filter}} template=&quot;$:/core/ui/ListItemTemplate&quot;/&gt;
+</pre>
+</div>
+<div caption="Revision Needed" created="20201023225838230" draft.of="$:/core/ui/MoreSideBar/Revision Needed" draft.title="$:/core/ui/MoreSideBar/Revision Needed" modified="20201023230840303" tags="$:/tags/MoreSideBar" title="Draft of '$:/core/ui/MoreSideBar/Revision Needed'">
+<pre>&lt;$list filter={{$:/core/Filters/Revision!!filter}} template=&quot;$:/core/ui/ListItemTemplate&quot;/&gt;
 </pre>
 </div>
 <div created="20201020224639929" modified="20201020233455405" tags="Persian Stew Vegan Vegetarian Nuts [[Gluten Free]]" title="Eggplant Fessenjoon">
