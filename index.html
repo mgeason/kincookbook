@@ -177,6 +177,8 @@ Error message and password prompt
 
 <li>$:/core/Filters/Revision</li>
 
+<li>$:/core/Filters/WIP</li>
+
 <li>$:/core/ui/MoreSideBar/All</li>
 
 <li>$:/core/ui/MoreSideBar/Explorer</li>
@@ -200,6 +202,8 @@ Error message and password prompt
 <li>$:/core/ui/MoreSideBar/Tools</li>
 
 <li>$:/core/ui/MoreSideBar/Types</li>
+
+<li>$:/core/ui/MoreSideBar/WIP</li>
 
 <li>$:/core/ui/MoreSideBarMod/Drafts</li>
 
@@ -246,6 +250,8 @@ Error message and password prompt
 <li>$:/state/Link/-1665787107/search</li>
 
 <li>$:/state/plugin-info-334910430-$:/core---1812962263</li>
+
+<li>$:/state/ShowPaletteEditor</li>
 
 <li>$:/state/sidebar</li>
 
@@ -543,6 +549,8 @@ Error message and password prompt
 
 <li>Berbere Spice</li>
 
+<li>Browned Butter and Sage Hummus</li>
+
 <li>Brownies</li>
 
 <li>Buckwheat Flat Bread</li>
@@ -587,6 +595,8 @@ Error message and password prompt
 
 <li>Gingerbread Cookies</li>
 
+<li>Gingernuts</li>
+
 <li>Hamed's Dadami Dip</li>
 
 <li>Hamed's Falafel</li>
@@ -604,6 +614,8 @@ Error message and password prompt
 <li>Honey Fried Tofu</li>
 
 <li>Honey Mustard Risotto</li>
+
+<li>Hummus</li>
 
 <li>Introductory Notes</li>
 
@@ -719,8 +731,8 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20201019231101867" modified="20201024042205745" title="$:/config/DefaultMoreSidebarTab">
-<pre>[[$:/core/ui/MoreSideBar/Revision Needed]]</pre>
+<div created="20201019231101867" modified="20201024214344766" title="$:/config/DefaultMoreSidebarTab">
+<pre>$:/core/ui/MoreSideBar/Drafts</pre>
 </div>
 <div created="20201019224331486" modified="20201021094239587" title="$:/config/DefaultSidebarTab">
 <pre>$:/core/ui/SideBar/Contents</pre>
@@ -10144,6 +10156,9 @@ Error message and password prompt
 <div created="20201023230400675" filter="[tag[Revision Needed]sort[title]]" modified="20201023231046766" tags="$:/tags/Filter" title="$:/core/Filters/Revision">
 <pre></pre>
 </div>
+<div created="20201024212301722" filter="[tag[Work in Progress]sort[title]]" modified="20201024213220152" tags="$:/tags/Filter" title="$:/core/Filters/WIP">
+<pre></pre>
+</div>
 <div caption="{{$:/language/SideBar/All/Caption}}" created="20201021100750832" modified="20201021100750832" title="$:/core/ui/MoreSideBar/All">
 <pre>&lt;$list filter={{$:/core/Filters/AllTiddlers!!filter}} template=&quot;$:/core/ui/ListItemTemplate&quot;/&gt;
 </pre>
@@ -10170,7 +10185,7 @@ Error message and password prompt
 <pre>&lt;$macrocall $name=&quot;timeline&quot; format={{$:/language/RecentChanges/DateFormat}}/&gt;
 </pre>
 </div>
-<div caption="Revision Needed" created="20201023225838230" modified="20201023231830833" tags="$:/tags/MoreSideBar" title="$:/core/ui/MoreSideBar/Revision Needed">
+<div caption="Revision Needed" created="20201023225838230" modified="20201024213118516" tags="$:/tags/MoreSideBar" title="$:/core/ui/MoreSideBar/Revision Needed">
 <pre>&lt;$list filter={{$:/core/Filters/Revision!!filter}} template=&quot;$:/core/ui/ListItemTemplate&quot;/&gt;
 </pre>
 </div>
@@ -10250,6 +10265,10 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 &lt;/$list&gt;
 &lt;/div&gt;
 &lt;/$list&gt;
+</pre>
+</div>
+<div caption="Works in Progress" created="20201024212322753" modified="20201024213115725" tags="$:/tags/MoreSideBar" title="$:/core/ui/MoreSideBar/WIP">
+<pre>&lt;$list filter={{$:/core/Filters/WIP!!filter}} template=&quot;$:/core/ui/ListItemTemplate&quot;/&gt;
 </pre>
 </div>
 <div caption="{{$:/language/SideBar/Drafts/Caption}}" created="20201021095155595" modified="20201021095210521" tags="$:/tags/MoreSideBarMod" title="$:/core/ui/MoreSideBarMod/Drafts">
@@ -10374,17 +10393,20 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div created="20201021203249995" modified="20201021203257470" title="$:/state/plugin-info-334910430-$:/core---1812962263">
 <pre>contents</pre>
 </div>
+<div created="20201024214256424" modified="20201024214256424" title="$:/state/ShowPaletteEditor">
+<pre>yes</pre>
+</div>
 <div created="20201019214818379" modified="20201020233600059" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
-<div created="20201021000127364" modified="20201024042047379" title="$:/state/tab--1498284803">
-<pre>$:/core/ui/AdvancedSearch/Shadows</pre>
+<div created="20201021000127364" modified="20201024213412155" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/System</pre>
 </div>
-<div created="20201019212937283" modified="20201021052430925" title="$:/state/tab--1963855381">
+<div created="20201019212937283" modified="20201024214328189" title="$:/state/tab--1963855381">
 <pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
 </div>
-<div created="20201019212910011" modified="20201023202510886" title="$:/state/tab--2112689675">
-<pre>$:/core/ui/ControlPanel/Advanced</pre>
+<div created="20201019212910011" modified="20201024214242588" title="$:/state/tab--2112689675">
+<pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
 <div created="20201019213328485" modified="20201023004055025" title="$:/state/tab--86143343">
 <pre>$:/core/ui/ControlPanel/Plugins/Installed/Plugins</pre>
@@ -10395,7 +10417,7 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div created="20201021032312505" modified="20201021032315739" title="$:/state/tab-1163638994">
 <pre>$:/core/ui/MoreSideBar/Plugins/Languages</pre>
 </div>
-<div created="20201019212923831" modified="20201024041723723" title="$:/state/tab-1749438307">
+<div created="20201019212923831" modified="20201024214432649" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
 <div created="20201021000101052" modified="20201021000106459" title="$:/state/tab-1991077080">
@@ -10404,13 +10426,13 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div created="20201021001126144" modified="20201023011917401" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20201021094845659" modified="20201023231346544" title="$:/state/tab/moresidebar-1645249547">
+<div created="20201021094845659" modified="20201024212700859" title="$:/state/tab/moresidebar-1645249547">
 <pre>$:/core/ui/MoreSideBar/Drafts</pre>
 </div>
-<div created="20201019214003952" modified="20201024041708852" title="$:/state/tab/moresidebar-1850697562">
+<div created="20201019214003952" modified="20201024214217138" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tools</pre>
 </div>
-<div created="20201019213355976" modified="20201024041937869" title="$:/state/tab/sidebar--595412856">
+<div created="20201019213355976" modified="20201024213222066" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
 </div>
 <div created="20201019213121522" modified="20201021000716077" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -10443,17 +10465,17 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201024041955838" list="[[Introductory Notes]]" modified="20201024042133027" title="$:/StoryList">
+<div created="20201024201421752" list="$:/ControlPanel [[Introductory Notes]]" modified="20201024214430497" title="$:/StoryList">
 <pre></pre>
 </div>
-<div created="20201021070935216" list="$:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/Revision Needed $:/core/ui/MoreSideBar/Tools" modified="20201024042142208" title="$:/tags/MoreSideBar">
+<div created="20201021070935216" list="$:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/WIP [[$:/core/ui/MoreSideBar/Revision Needed]] $:/core/ui/MoreSideBar/Tools" modified="20201024214208294" title="$:/tags/MoreSideBar">
 <pre></pre>
 </div>
 <div created="20201021093732660" list="$:/core/ui/SideBar/Contents $:/core/ui/SideBar/All $:/core/ui/SideBar/Open $:/core/ui/SideBar/Recent $:/core/ui/SideBar/More" modified="20201021095554062" title="$:/tags/SideBar">
 <pre></pre>
 </div>
-<div created="20201021035640492" modified="20201024042048729" title="$:/temp/advancedsearch">
-<pre>more</pre>
+<div created="20201021035640492" modified="20201024213510022" title="$:/temp/advancedsearch">
+<pre>sidebar</pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
 <pre>{
@@ -10468,7 +10490,7 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;http://www.kincookbook.space/&quot;
+            &quot;text&quot;: &quot;https://www.kincookbook.space/&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -10480,7 +10502,7 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
         },
         &quot;$:/info/url/protocol&quot;: {
             &quot;title&quot;: &quot;$:/info/url/protocol&quot;,
-            &quot;text&quot;: &quot;http:&quot;
+            &quot;text&quot;: &quot;https:&quot;
         },
         &quot;$:/info/url/port&quot;: {
             &quot;title&quot;: &quot;$:/info/url/port&quot;,
@@ -10496,7 +10518,7 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
         },
         &quot;$:/info/url/origin&quot;: {
             &quot;title&quot;: &quot;$:/info/url/origin&quot;,
-            &quot;text&quot;: &quot;http://www.kincookbook.space&quot;
+            &quot;text&quot;: &quot;https://www.kincookbook.space&quot;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
@@ -10513,7 +10535,7 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
     }
 }</pre>
 </div>
-<div created="20201019214253906" modified="20201023230433328" title="$:/temp/NewTagName">
+<div created="20201019214253906" modified="20201024211541722" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div author="Paco Rivière" core-version="&gt;=5.0.0" created="20201019224628077" dependents="" description="Catalan (Spain)" icon="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22810%22%20height%3D%22540%22%3E%0A%3Crect%20width%3D%22810%22%20height%3D%22540%22%20fill%3D%22%23FCDD09%22%2F%3E%0A%3Cpath%20stroke%3D%22%23DA121A%22%20stroke-width%3D%2260%22%20d%3D%22M0%2C90H810m0%2C120H0m0%2C120H810m0%2C120H0%22%2F%3E%0A%3C%2Fsvg%3E" modified="20201019224628077" name="ca-ES" original-plugin-type="language" original-tags="" original-title="$:/languages/ca-ES" original-type="application/json" requires-reload="no" server-url="https://tiddlywiki.com/library/v5.1.22/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/languages/ca-ES" type="text/vnd.tiddlywiki" version="5.1.22">
@@ -11466,7 +11488,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20201019224630087" modified="20201019224630595" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>tags</pre>
 </div>
-<div created="20201019214025410" modified="20201024042045074" title="$:/temp/search">
+<div created="20201019214025410" modified="20201024213242043" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20201019224628034" modified="20201019224628034" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.22/index.html" url="https://tiddlywiki.com/library/v5.1.22/index.html">
@@ -11837,6 +11859,34 @@ Topping
 # Toast whole spices in pan over medium heat, tossing frequently to avoid burning
 # When fragrant remove from pan and set aside to cool
 # Blend or grind with remaining spices.</pre>
+</div>
+<div created="20201024203203423" modified="20201024210458379" tags="[[Gluten Free]] Vegetarian Dip Vegan Legumes" title="Browned Butter and Sage Hummus">
+<pre>''Prep Time'' 00:05
+
+''Cook Time'' 00:00
+
+''Serves'' 1
+
+!! Ingredients
+
+* 250g Butter Beans (Lima) (or Cannellini Beans) - cooked and drained
+* 4 cloves Garlic - minced
+* 4 leaves Sage
+* 4 bsp Nuttelex (or butter)
+* 1 bsp Hulled Tahini
+* Juice of a juicy Lemon
+* Salt
+* Olive Oil
+
+!! Method
+
+# Melt Butter in a small pan or pot over medium heat.
+# Add Garlic and Sage. Shake or swirl frequently until Butter is brown with a toasty aroma. The degree of browning is personal preference with your sense of smell a fit first measure. Take it too dark and it will become bitter. Take off heat, transfer to small bowl, and allow to cool to at least warm before using.
+# Separate Sage leaves and return to pan over medium to high. Fry until crispy but not burnt.
+# Blitz together browned Butter, Tahini, Lemon Juice, and a big pinch of Salt.
+# Add Beans, reserving a few, and process. While processing modulate Oil and water or aquafaba (bean liquid) to desired consistency.
+# Add additional Lemon Juice or Salt to taste.
+# Serve drizzled in a thin layer of Oil to avoid a dry crust forming over time. Top with the few remaining beans and fried sage leaves.</pre>
 </div>
 <div created="20201019214110191" modified="20201019230533924" tags="Vegetarian Chocolate [[Sweet Treats]]" title="Brownies" type="text/vnd.tiddlywiki">
 <pre>!! Ingredients
@@ -12499,6 +12549,34 @@ Our bodies don't require as many dietary proteins as commonly thought. Eating a 
 # Leave to cool on trays for 5 minutes then transfer to cooking racks.
 # When cool ice with royal icing or any hard setting icing.</pre>
 </div>
+<div created="20201024210634478" modified="20201024212130996" tags="Vegetarian Vegan Biscuits [[Sweet Treats]] [[Work in Progress]]" title="Gingernuts">
+<pre>//Baked once and very much a work in progress. I like them gingery, spicy, and near tooth shattering to be dunked in tea. Any advice to improve this recipe would be greatly appreciated.//
+
+''Prep Time'' 00:10
+
+''Cook Time'' 00:25
+
+''Serves'' 12
+
+!! Ingredients
+
+* 200g Wholemeal Flour
+* 60g Brown Sugar
+* 1 tbs Ginger
+* 1 tsp Cayenne
+* 1 tsp Nutmeg
+* 1 tsp cinnamon
+* 100g Nuttelex - melted
+* 2 tbs Honey
+
+!! Method
+
+# Preheat oven to 190 degrees C.
+# Mix together all dry ingredients then incorporate melted Nuttelex and Honey.
+# Form into palm sized balls and arrange spaced on a lined baking tray.
+# Compress flat using the base of a glass or mug.
+# Bake for ~15-25mins (?) then remove and allow to cool on tray before handling. They will become more firm as they cool.</pre>
+</div>
 <div created="20201020023524431" modified="20201020025641215" tags="[[Free to Feed]] [[Gluten Free]] Persian Vegetarian Dip" title="Hamed's Dadami Dip">
 <pre>//“This Dadami Dip is the recipe of my father. In fact, it
 doesn’t even have a name. I just called it Dadami which
@@ -12791,6 +12869,37 @@ salads in Iran!”
 # Fry Onion and Carrot in broad pan or wok until browning.
 # Add Rice and fry briefly, stirring, before adding Chicken Stock. Cover and simmer ~10mins.
 # Add Broccoli/Cauliflower, Sauce, and Chicken (if using). Stir and cover returning to simmer until rice is al dente ~10mins. Stir occasionally to check rice and add water if needed to reach desired consistency.</pre>
+</div>
+<div created="20201024201428489" modified="20201024210554028" tags="[[Gluten Free]] Vegetarian Dip Vegan Legumes" title="Hummus">
+<pre>''Prep Time'' 00:05
+
+''Cook Time'' 00:00
+
+''Serves'' 1
+
+!! Ingredients
+
+* 250g Chickpeas (Garbanzo) (Note 1) - cooked and drained
+* 4 cloves Garlic - chopped (Note 2)
+* 1 bsp Hulled Tahini (Note 3)
+* Juice of a juicy Lemon
+* Salt
+* Olive Oil
+
+!! Method
+
+# Blitz together Garlic, Tahini, Lemon Juice, a big pinch of Salt, and a generous glug of Oil.
+# Add Chickpeas, reserving a few, and process. While processing modulate Oil and water or aquafaba (chickpea liquid) to desired consistency.
+# Add additional Lemon Juice, Salt, or additional spices to taste.
+# Serve drizzled in a thin layer of Oil to avoid a dry crust forming over time. Top with the few remaining chickpeas and a dusting of any additional spices.
+
+!! Notes
+
+# Cook your own chickpeas for best results but tinned can be used for quick convenience. This quantity is roughly the drained weight of a ~400g tin. Brands and batches differ so the finished texture and consistency will vary.
+# For those with an inner garlic fiend feel free to go crazy with it but keep in mind raw garlic lingers on the breath.
+# Unhulled Tahini works similarly although has a more bitter taste and slightly less creamy consistency.
+# Spices such as cumin, paprika, and fennel make good additions.
+# Chickpeas (Garbanzo) can be substituted with other beans, even lentils if you're feeling creative. Butter (Lima) Beans or Cannellini would be my first recommendations both offering a creamier texture and milder flavour.</pre>
 </div>
 <div created="20201019220111642" modified="20201024020549206" tags="Glossary" title="Introductory Notes">
 <pre>!! Welcome
@@ -13654,7 +13763,7 @@ Mahshid//
 # Blend all modulating Water and Oil to reach desired consistency. Add spices as desired.
 # Some or all Cashews can be kept separate until later in the blending process for a coarse texture, or processed prior to Capsicum for a smoother creamier texture.</pre>
 </div>
-<div created="20201024021834056" modified="20201024041858335" tags="[[Revision Needed]] Pasta Vegan Vegetarian" title="Saffron Coconut Pasta">
+<div created="20201024021834056" modified="20201024212230773" tags="Pasta Vegan Vegetarian [[Work in Progress]]" title="Saffron Coconut Pasta">
 <pre>//This is very much a work in progress and has only been cooked once. Initially with the addition of brown mushrooms and porcini powder mixed with the stock. It created a deliciously complex body but perhaps distracted from the uniqueness of the saffron. More experimentation to come before revision tag is removed.//
 
 ''Prep Time'' 00:10
